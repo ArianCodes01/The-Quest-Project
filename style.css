@@ -13,6 +13,15 @@ button {
    margin: 0 auto;
 }
 
+.eyebrow {
+   color: #65d5b9;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 11px;
+   font-weight: 700;
+   margin-bottom: 16px;
+}
+
 h1,
 h2,
 h3,
@@ -202,15 +211,6 @@ header ul li:hover {
    justify-content: center;
 }
 
-.game-studies-section .studies-eyebrow {
-   color: #65d5b9;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   font-size: 11px;
-   font-weight: 700;
-   margin-bottom: 16px;
-}
-
 .game-studies-section .studies-title {
    font-size: 40px;
    margin-bottom: 22px;
@@ -245,14 +245,6 @@ header ul li:hover {
 
 .game-studies-section .bottom-content {
    padding: 28px;
-}
-
-.game-studies-section .card-eyebrow {
-   color: #c3cbc5;
-   text-transform: uppercase;
-   font-size: 11px;
-   font-weight: 700;
-   margin-bottom: 16px;
 }
 
 .game-studies-section .card-title {
@@ -292,15 +284,6 @@ header ul li:hover {
    padding: 27px !important;
 }
 
-.aside-studies-eyebrow {
-   color: #65d5b9;
-   text-transform: uppercase;
-   letter-spacing: 1.5px;
-   font-size: 11px;
-   font-weight: 700;
-   margin-bottom: 16px;
-}
-
 .aside-studies-title {
    font-size: 23px;
    margin-bottom: 22px;
@@ -335,4 +318,39 @@ header ul li:hover {
 
 .bottom-text i {
    transition: all 0.2s ease;
+}
+
+/* FIELD GUIDE SECTION */
+
+.field-guide-section {
+   background-color: #202725;
+   padding: 86px 0;
+}
+
+.field-guide-title {
+   font-size: 35px;
+   margin-bottom: 22px;
+   color: #eeeeed;
+   line-height: 1.25;
+   padding-left: 15px;
+}
+
+.field-guide-card {
+   background: #202725;
+   border-color: #43534d;
+   padding: 28px;
+   border: 1px solid #43534d;
+}
+
+.field-guide-card .card-title {
+   font-size: 23px;
+   margin-bottom: 14px;
+   color: #eeeeed;
+   line-height: 1.25;
+}
+
+.field-guide-card .card-desc {
+   color: #b9c1c0;
+   font-size: 15px;
+   line-height: 1.85;
 }
