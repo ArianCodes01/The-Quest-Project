@@ -354,3 +354,103 @@ header ul li:hover {
    font-size: 15px;
    line-height: 1.85;
 }
+
+/* MORE CONTEXT SECTION */
+
+.more-context-section {
+   padding: 86px 25px;
+   background-color: #181d1b;
+}
+
+.more-context-title {
+   font-size: clamp(27px, 3vw, 40px);
+   margin-bottom: 42px;
+   color: white;
+   font-weight: 500;
+}
+
+.plus-items {
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   margin: 0 auto;
+}
+
+.plus-item {
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid #67766c;
+   padding: 20px 0;
+   color: white;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+/* YOUR READING LIST SECTION */
+
+.your-reading-list-section {
+   padding: 86px 25px;
+   background-color: #202725;
+}
+
+.right-left {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.left-content h2 {
+   max-width: 650px;
+   font-size: clamp(27px, 3vw, 40px);
+   margin-bottom: 22px;
+   color: #eeeeed;
+   line-height: 1.25;
+}
+
+.left-content p {
+   max-width: 690px;
+   color: #b9c1c0;
+   font-size: 15px;
+   line-height: 1.85;
+}
+
+.right-button button {
+   background: #67dfc0;
+   color: #11251f;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 18px;
+   min-height: 48px;
+   padding: 15px 26px;
+   font-size: 13px;
+   font-weight: 700;
+   text-align: center;
+   cursor: pointer;
+   line-height: 1.45;
+   transition: background .2s, color .2s;
+   border: none;
+}
+
+.right-button button:hover {
+   background: white;
+}
+
+.right-button svg {
+   width: 18px;
+   height: 18px;
+   flex-shrink: 0;
+   stroke: currentColor;
+   stroke-width: 1.8;
+   fill: none;
+   vertical-align: middle;
+}
+
+@media screen and (max-width : 768px) {
+   .right-left {
+      flex-direction: column;
+   }
+   .right-button button{
+      margin-top: 25px;
+   }
+}
