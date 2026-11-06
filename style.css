@@ -428,12 +428,14 @@ header ul li:hover {
    text-align: center;
    cursor: pointer;
    line-height: 1.45;
-   transition: background .2s, color .2s;
+   transition: all 0.3s ease;
    border: none;
+   border-radius: 2px;
 }
 
 .right-button button:hover {
    background: white;
+   transform: translateY(-3px);
 }
 
 .right-button svg {
@@ -450,7 +452,108 @@ header ul li:hover {
    .right-left {
       flex-direction: column;
    }
-   .right-button button{
+
+   .right-button button {
       margin-top: 25px;
+   }
+}
+
+/* FOOTER SECTION */
+
+footer {
+   background-color: #101513;
+   padding: 70px 25px 24px;
+   border-top: 1px solid #3d4b43;
+}
+
+.footer-item h4 {
+   font-size: 28px;
+   font-weight: 700;
+   color: #fff;
+   margin-bottom: 20px;
+   transition: all 0.2s ease;
+   cursor: pointer;
+}
+
+.footer-item h4:hover {
+   text-decoration: underline;
+}
+
+.footer-item p {
+   color: #b9c5bf;
+   font-size: 13px;
+   line-height: 1.85;
+   max-width: 400px;
+}
+
+.explain-item p {
+   margin-top: 15px;
+}
+
+.footer-item h5 {
+   color: white;
+   font-size: 15px;
+   margin: 8px 0 24px;
+}
+
+.footer-item ul {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   row-gap: 9px;
+}
+
+.footer-item ul li {
+   color: #fff;
+   display: block;
+   width: fit-content;
+   font-size: 13px;
+   margin-bottom: 13px;
+   cursor: pointer;
+   transition: all 0.2s ease;
+}
+
+.footer-item ul li:hover {
+   text-decoration: underline;
+}
+
+.footer-bottom {
+   display: flex;
+   justify-content: space-between;
+   gap: 25px;
+   align-items: center;
+   border-top: 1px solid rgba(255, 255, 255, .16);
+   margin-top: 45px;
+   padding-top: 25px;
+}
+
+.footer-bottom p {
+   font-size: 11px;
+}
+
+.footer-bottom .left p {
+   color: #b9c5bf;
+}
+
+.footer-bottom .left p a {
+   color: white;
+}
+
+.footer-bottom .right p {
+   transition: all 0.2s ease;
+   font-size: inherit;
+   color: white;
+   cursor: pointer;
+   font-size: 11px;
+}
+
+.footer-bottom .right p:hover {
+   text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+   .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
    }
 }
