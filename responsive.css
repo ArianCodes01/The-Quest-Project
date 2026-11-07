@@ -4,10 +4,6 @@
    box-sizing: border-box;
 }
 
-.container {
-   margin: 0 auto;
-}
-
 [class^="col-"] {
    padding: 16px;
 }
