@@ -38,7 +38,9 @@ p {
 
 header {
    background: #101513;
-   position: relative;
+   position: fixed;
+   left: 0;
+   right: 0;
    z-index: 100;
    padding: 0 25px;
 }
@@ -83,7 +85,7 @@ header ul li:hover {
    color: white;
    font-size: 23px;
    cursor: pointer;
-   display: none !important;
+   display: none;
 }
 
 #XIcon {
@@ -96,9 +98,10 @@ header ul li:hover {
    header ul {
       display: none;
    }
-
-   .bars-icon {
-      display: block !important;
+}
+@media screen and (min-width : 768px) {
+   .bars-icon{
+      display: none !important;
    }
 }
 

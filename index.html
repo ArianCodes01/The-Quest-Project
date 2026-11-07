@@ -1,337 +1,359 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="responsive.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      />
+      <title>The Quest Project</title>
+   </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="responsive.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-   <title>The Quest Project</title>
-</head>
-
-<body>
-   <header class="header">
-      <div class="container">
-         <nav class="navbar">
-            <img src="./Images/logo.png" alt="logo img" class="logo-img">
-
-            <ul>
-               <li>Game studies</li>
-               <li>Reviews</li>
-               <li>Worlds & characters</li>
-               <li>Journal</li>
-               <li>About</li>
-            </ul>
-            <i class="fa-solid fa-bars-staggered bars-icon" id="barsIcon"></i>
-            <i class="fa-solid fa-x none" id="XIcon"></i>
-         </nav>
-      </div>
-   </header>
-
-   <aside class="sideBar" id="sideBar">
-      <ul>
-         <li>Game studies</li>
-         <li>Reviews</li>
-         <li>Worlds & characters</li>
-         <li>Journal</li>
-         <li>About</li>
-      </ul>
-   </aside>
-
-   <section class="hero-section">
-      <div class="hero-overlay">
+   <body>
+      <header class="header">
          <div class="container">
-            <div class="hero-content">
-               <p class="hero-eyebrow">
-                  An independent games journal
-               </p>
-               <h1 class="hero-title">
-                  Every world begins
-                  <br>
-                  with a question.
-               </h1>
-               <p class="hero-desc">
-                  Worlds worth exploring. Ideas worth following. A closer look at the design behind the adventure.
-               </p>
-               <div class="hero-btns">
-                  <button class="exploreBtn">
-                     Explore the studies
-                     <svg class="lucide" aria-hidden="true">
-                        <use href="#i-arrow-up-right"></use>
-                     </svg>
-                  </button>
-                  <button class="readBtn">
-                     Read the field guide
-                     <svg class="lucide" aria-hidden="true">
-                        <use href="#i-arrow-up-right"></use>
-                     </svg>
-                  </button>
-               </div>
+            <nav class="navbar">
+               <img src="./Images/logo.png" alt="logo img" class="logo-img" />
 
-               <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                  <symbol id="i-arrow-up-right" viewBox="0 0 24 24">
-                     <path d="M7 17 17 7"></path>
-                     <path d="M7 7h10v10"></path>
-                  </symbol>
-               </svg>
-            </div>
+               <ul>
+                  <li>Game studies</li>
+                  <li>Reviews</li>
+                  <li>Worlds & characters</li>
+                  <li>Journal</li>
+                  <li>About</li>
+               </ul>
+               <div>
+                  <i class="fa-solid fa-bars-staggered bars-icon" id="barsIcon"></i>
+                  <i class="fa-solid fa-x none" id="XIcon"></i>
+               </div>
+            </nav>
          </div>
-      </div>
-   </section>
+      </header>
 
-   <section class="game-studies-section">
-      <div class="container">
-         <div class="left-right">
-            <div class="left">
-               <p class="eyebrow">Featured game studies</p>
-               <h2 class="studies-title">Another world, another point of view.</h2>
-               <p class="studies-desc">Fictional editorial concepts with original illustrative artwork.</p>
+      <aside class="sideBar" id="sideBar">
+         <ul>
+            <li>Game studies</li>
+            <li>Reviews</li>
+            <li>Worlds & characters</li>
+            <li>Journal</li>
+            <li>About</li>
+         </ul>
+      </aside>
 
-               <div class="row">
-                  <div class="col-xs-12 col-md-6 col-lg-3" style="padding: 10px 5px;">
-                     <div class="studies-card">
-                        <div class="top-img">
-                           <img src="./Images/card-1-img.avif" alt="">
-                        </div>
-
-                        <div class="bottom-content">
-                           <p class="eyebrow">Worldbuilding</p>
-                           <h3 class="card-title">Wayfinder Vale</h3>
-                           <p class="card-desc">Warm windows, suspended bridges and a world built around the pleasure of
-                              finding another path.</p>
-
-                           <a href="" class="closer-look">
-                              Take a closer look
-                              <svg class="lucide" aria-hidden="true">
-                                 <use href="#i-arrow-up-right"></use>
-                              </svg>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-xs-12 col-md-6 col-lg-3" style="padding: 10px 5px;">
-                     <div class="studies-card">
-                        <div class="top-img">
-                           <img src="./Images/card-2-img.avif" alt="">
-                        </div>
-
-                        <div class="bottom-content">
-                           <p class="eyebrow">Exploration</p>
-                           <h3 class="card-title">Signal Drift</h3>
-                           <p class="card-desc">A quiet science-fiction study in atmosphere, isolation and the small
-                              signals that draw us forward.</p>
-
-                           <a href="" class="closer-look">
-                              Take a closer look
-                              <svg class="lucide" aria-hidden="true">
-                                 <use href="#i-arrow-up-right"></use>
-                              </svg>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-xs-12 col-md-6 col-lg-3" style="padding: 10px 5px;">
-                     <div class="studies-card">
-                        <div class="top-img">
-                           <img src="./Images/card-3-img.avif" alt="">
-                        </div>
-
-                        <div class="bottom-content">
-                           <p class="eyebrow">Visual design</p>
-                           <h3 class="card-title">Afterlight Wilds</h3>
-                           <p class="card-desc">An autumn landscape where light, stone and mechanical bridges become the
-                              language of a puzzle.</p>
-
-                           <a href="" class="closer-look">
-                              Take a closer look
-                              <svg class="lucide" aria-hidden="true">
-                                 <use href="#i-arrow-up-right"></use>
-                              </svg>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-
-                  <aside class="col-xs-12 col-md-6 col-lg-3" style="padding: 10px 5px;">
-                     <p class="eyebrow">On the reading desk</p>
-                     <h2 class="aside-studies-title">Follow the interesting detail.</h2>
-                     <p class="aside-studies-desc">Light, sound, scale and a well-placed path. Small decisions make a
-                        game
-                        world
-                        feel connected.</p>
-
-                     <div class="aside-bottom">
-                        <p class="bottom-text">Read the design reviews <i class="fa-solid fa-arrow-right"
-                              style="margin-left: 5px;"></i></p>
-
-                        <p class="bottom-text">Worlds & characters <i class="fa-solid fa-arrow-right"
-                              style="margin-left: 5px;"></i></p>
-
-                        <p class="bottom-text">Make a reading list <i class="fa-solid fa-arrow-right"
-                              style="margin-left: 5px;"></i></p>
-                     </div>
-                  </aside>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <section class="field-guide-section">
-      <div class="container">
-         <p class="eyebrow" style="padding-left: 15px;">From the field guide</p>
-         <h2 class="field-guide-title">A little more to notice.</h2>
-
-         <div class="row">
-            <div class="col-xs-12 col-md-6 col-lg-4">
-               <div class="field-guide-card">
-                  <p class="eyebrow">01</p>
-                  <h3 class="card-title">Look at the world differently today</h3>
-                  <p class="card-desc">Notice how light, scale and shape invite you to explore and understand the world
-                     around you.</p>
-               </div>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4">
-               <div class="field-guide-card">
-                  <p class="eyebrow">02</p>
-                  <h3 class="card-title">Follow a thoughtful design decision</h3>
-                  <p class="card-desc">A route, landmark or small visual detail can change the way a place feels and how
-                     people experience it.</p>
-               </div>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4">
-               <div class="field-guide-card">
-                  <p class="eyebrow">03</p>
-                  <h3 class="card-title">Keep the context with the image</h3>
-                  <p class="card-desc">Our game studies are fictional editorial concepts, created to explore design
-                     rather than represent released games</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <section class="more-context-section">
-      <div class="container">
-         <p class="eyebrow">A little more context</p>
-         <h2 class="more-context-title">A few notes before you explore.</h2>
-
-         <div class="plus-items">
-            <div class="plus-item">
-               <div class="item-left">
-                  Are the featured games available to play?
-               </div>
-               <div class="item-right">
-                  <i class="fa-solid fa-plus"></i>
-               </div>
-            </div>
-
-            <div class="plus-item">
-               <div class="item-left">
-                  Can I prepare a reading list?
-               </div>
-               <div class="item-right">
-                  <i class="fa-solid fa-plus"></i>
-               </div>
-            </div>
-
-            <div class="plus-item">
-               <div class="item-left">
-                  What imagery is original to the template?
-               </div>
-               <div class="item-right">
-                  <i class="fa-solid fa-plus"></i>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <section class="your-reading-list-section">
-      <div class="container">
-         <div class="right-left">
-            <div class="left-content">
-               <h2>Leave room for the next good story.</h2>
-               <p>Choose a few stories for a quieter moment during this visit.</p>
-            </div>
-
-            <div class="right-button">
-               <button>
-                  Make a reading list
-                  <svg class="lucide" aria-hidden="true">
-                     <use href="#i-arrow-up-right"></use>
-                  </svg>
-               </button>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <footer class="footer">
-      <div class="container">
-         <div class="row space-between">
-            <div class="col-xs-12 col-md-6 col-lg-4">
-               <div class="footer-item explain-item">
-                  <h4>The Quest</h4>
-                  <p>Every world begins with a question.</p>
-                  <p style="font-size: 12px;">
-                     A fictional independent games and worldbuilding journal for this website demonstration.
+      <section class="hero-section">
+         <div class="hero-overlay">
+            <div class="container">
+               <div class="hero-content">
+                  <p class="hero-eyebrow">An independent games journal</p>
+                  <h1 class="hero-title">
+                     Every world begins
+                     <br />
+                     with a question.
+                  </h1>
+                  <p class="hero-desc">
+                     Worlds worth exploring. Ideas worth following. A closer look at the design
+                     behind the adventure.
                   </p>
-               </div>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-2">
-               <div class="footer-item list-item">
-                  <h5>Explore</h5>
-
-                  <ul>
-                     <li>Game studies</li>
-                     <li>Reviews</li>
-                     <li>Worlds & characters</li>
-                     <li>Journal</li>
-                     <li>Practical guide</li>
-                     <li>Reading list</li>
-                     <li>Image gallery</li>
-                  </ul>
-               </div>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4">
-               <div class="footer-item list-item">
-                  <h5>Start a conversation</h5>
-
-                  <p style="margin-bottom: 20px;">A thoughtful question or an idea for the next story.</p>
-
-                  <ul>
-                     <li>
-                        Get in touch
+                  <div class="hero-btns">
+                     <button class="exploreBtn">
+                        Explore the studies
                         <svg class="lucide" aria-hidden="true">
                            <use href="#i-arrow-up-right"></use>
                         </svg>
-                     </li>
-                     <li>Privacy & demo information</li>
-                  </ul>
+                     </button>
+                     <button class="readBtn">
+                        Read the field guide
+                        <svg class="lucide" aria-hidden="true">
+                           <use href="#i-arrow-up-right"></use>
+                        </svg>
+                     </button>
+                  </div>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                     <symbol id="i-arrow-up-right" viewBox="0 0 24 24">
+                        <path d="M7 17 17 7"></path>
+                        <path d="M7 7h10v10"></path>
+                     </symbol>
+                  </svg>
                </div>
             </div>
          </div>
+      </section>
 
-         <div class="footer-bottom">
-            <div class="left">
-               <p>© 2026 The Quest. Website template by <a href="https://colorlib.com" rel="noopener">Colorlib</a>.</p>
-            </div>
-            <div class="right">
-               <p>Template documentation</p>
+      <section class="game-studies-section">
+         <div class="container">
+            <div class="left-right">
+               <div class="left">
+                  <p class="eyebrow">Featured game studies</p>
+                  <h2 class="studies-title">Another world, another point of view.</h2>
+                  <p class="studies-desc">
+                     Fictional editorial concepts with original illustrative artwork.
+                  </p>
+
+                  <div class="row">
+                     <div class="col-xs-12 col-md-6 col-lg-3" style="padding: 10px 5px">
+                        <div class="studies-card">
+                           <div class="top-img">
+                              <img src="./Images/card-1-img.avif" alt="" />
+                           </div>
+
+                           <div class="bottom-content">
+                              <p class="eyebrow">Worldbuilding</p>
+                              <h3 class="card-title">Wayfinder Vale</h3>
+                              <p class="card-desc">
+                                 Warm windows, suspended bridges and a world built around the
+                                 pleasure of finding another path.
+                              </p>
+
+                              <a href="" class="closer-look">
+                                 Take a closer look
+                                 <svg class="lucide" aria-hidden="true">
+                                    <use href="#i-arrow-up-right"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-xs-12 col-md-6 col-lg-3" style="padding: 10px 5px">
+                        <div class="studies-card">
+                           <div class="top-img">
+                              <img src="./Images/card-2-img.avif" alt="" />
+                           </div>
+
+                           <div class="bottom-content">
+                              <p class="eyebrow">Exploration</p>
+                              <h3 class="card-title">Signal Drift</h3>
+                              <p class="card-desc">
+                                 A quiet science-fiction study in atmosphere, isolation and the
+                                 small signals that draw us forward.
+                              </p>
+
+                              <a href="" class="closer-look">
+                                 Take a closer look
+                                 <svg class="lucide" aria-hidden="true">
+                                    <use href="#i-arrow-up-right"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-xs-12 col-md-6 col-lg-3" style="padding: 10px 5px">
+                        <div class="studies-card">
+                           <div class="top-img">
+                              <img src="./Images/card-3-img.avif" alt="" />
+                           </div>
+
+                           <div class="bottom-content">
+                              <p class="eyebrow">Visual design</p>
+                              <h3 class="card-title">Afterlight Wilds</h3>
+                              <p class="card-desc">
+                                 An autumn landscape where light, stone and mechanical bridges
+                                 become the language of a puzzle.
+                              </p>
+
+                              <a href="" class="closer-look">
+                                 Take a closer look
+                                 <svg class="lucide" aria-hidden="true">
+                                    <use href="#i-arrow-up-right"></use>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <aside class="col-xs-12 col-md-6 col-lg-3" style="padding: 10px 5px">
+                        <p class="eyebrow">On the reading desk</p>
+                        <h2 class="aside-studies-title">Follow the interesting detail.</h2>
+                        <p class="aside-studies-desc">
+                           Light, sound, scale and a well-placed path. Small decisions make a game
+                           world feel connected.
+                        </p>
+
+                        <div class="aside-bottom">
+                           <p class="bottom-text">
+                              Read the design reviews
+                              <i class="fa-solid fa-arrow-right" style="margin-left: 5px"></i>
+                           </p>
+
+                           <p class="bottom-text">
+                              Worlds & characters
+                              <i class="fa-solid fa-arrow-right" style="margin-left: 5px"></i>
+                           </p>
+
+                           <p class="bottom-text">
+                              Make a reading list
+                              <i class="fa-solid fa-arrow-right" style="margin-left: 5px"></i>
+                           </p>
+                        </div>
+                     </aside>
+                  </div>
+               </div>
             </div>
          </div>
-      </div>
-   </footer>
+      </section>
 
-   <script src="./app.js"></script>
-</body>
+      <section class="field-guide-section">
+         <div class="container">
+            <p class="eyebrow" style="padding-left: 15px">From the field guide</p>
+            <h2 class="field-guide-title">A little more to notice.</h2>
 
+            <div class="row">
+               <div class="col-xs-12 col-md-6 col-lg-4">
+                  <div class="field-guide-card">
+                     <p class="eyebrow">01</p>
+                     <h3 class="card-title">Look at the world differently today</h3>
+                     <p class="card-desc">
+                        Notice how light, scale and shape invite you to explore and understand the
+                        world around you.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="col-xs-12 col-md-6 col-lg-4">
+                  <div class="field-guide-card">
+                     <p class="eyebrow">02</p>
+                     <h3 class="card-title">Follow a thoughtful design decision</h3>
+                     <p class="card-desc">
+                        A route, landmark or small visual detail can change the way a place feels
+                        and how people experience it.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="col-xs-12 col-md-6 col-lg-4">
+                  <div class="field-guide-card">
+                     <p class="eyebrow">03</p>
+                     <h3 class="card-title">Keep the context with the image</h3>
+                     <p class="card-desc">
+                        Our game studies are fictional editorial concepts, created to explore design
+                        rather than represent released games
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="more-context-section">
+         <div class="container">
+            <p class="eyebrow">A little more context</p>
+            <h2 class="more-context-title">A few notes before you explore.</h2>
+
+            <div class="plus-items">
+               <div class="plus-item">
+                  <div class="item-left">Are the featured games available to play?</div>
+                  <div class="item-right">
+                     <i class="fa-solid fa-plus"></i>
+                  </div>
+               </div>
+
+               <div class="plus-item">
+                  <div class="item-left">Can I prepare a reading list?</div>
+                  <div class="item-right">
+                     <i class="fa-solid fa-plus"></i>
+                  </div>
+               </div>
+
+               <div class="plus-item">
+                  <div class="item-left">What imagery is original to the template?</div>
+                  <div class="item-right">
+                     <i class="fa-solid fa-plus"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="your-reading-list-section">
+         <div class="container">
+            <div class="right-left">
+               <div class="left-content">
+                  <h2>Leave room for the next good story.</h2>
+                  <p>Choose a few stories for a quieter moment during this visit.</p>
+               </div>
+
+               <div class="right-button">
+                  <button>
+                     Make a reading list
+                     <svg class="lucide" aria-hidden="true">
+                        <use href="#i-arrow-up-right"></use>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer class="footer">
+         <div class="container">
+            <div class="row space-between">
+               <div class="col-xs-12 col-md-6 col-lg-4">
+                  <div class="footer-item explain-item">
+                     <h4>The Quest</h4>
+                     <p>Every world begins with a question.</p>
+                     <p style="font-size: 12px">
+                        A fictional independent games and worldbuilding journal for this website
+                        demonstration.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="col-xs-12 col-md-6 col-lg-2">
+                  <div class="footer-item list-item">
+                     <h5>Explore</h5>
+
+                     <ul>
+                        <li>Game studies</li>
+                        <li>Reviews</li>
+                        <li>Worlds & characters</li>
+                        <li>Journal</li>
+                        <li>Practical guide</li>
+                        <li>Reading list</li>
+                        <li>Image gallery</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="col-xs-12 col-md-6 col-lg-4">
+                  <div class="footer-item list-item">
+                     <h5>Start a conversation</h5>
+
+                     <p style="margin-bottom: 20px">
+                        A thoughtful question or an idea for the next story.
+                     </p>
+
+                     <ul>
+                        <li>
+                           Get in touch
+                           <svg class="lucide" aria-hidden="true">
+                              <use href="#i-arrow-up-right"></use>
+                           </svg>
+                        </li>
+                        <li>Privacy & demo information</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <div class="footer-bottom">
+               <div class="left">
+                  <p>
+                     © 2026 The Quest. Website template by
+                     <a href="https://colorlib.com" rel="noopener">Colorlib</a>.
+                  </p>
+               </div>
+               <div class="right">
+                  <p>Template documentation</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <script src="./app.js"></script>
+   </body>
 </html>
